@@ -29,6 +29,11 @@ const server = app.listen(PORT, () => {
   console.log('\n' + '='.repeat(50));
   console.log('--> Server is running!');
   console.log('='.repeat(50));
+  console.log(`--> Environment: ${process.env.NODE_ENV || 'development'}`);
+  console.log(`--> Server URL: http://localhost:${PORT}`);
+  console.log(`--> API Endpoint: http://localhost:${PORT}/api/notes`);
+  console.log(`--> Health Check: http://localhost:${PORT}/api/health`);
+  console.log('='.repeat(50) + '\n');
 });
 
 // Handle Unhandled Promise Rejections
