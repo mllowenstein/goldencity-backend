@@ -1,0 +1,21 @@
+{
+  "name": "goldencity-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "local": "concurrently \"cd client && npm run dev\" \"cd server && npm run start\"",
+    "start": "concurrently \"cd client && npm run start\" \"cd server && npm run start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "uuid": "^13.0.0"
+  }
+}
